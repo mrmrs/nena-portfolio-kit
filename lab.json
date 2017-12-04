@@ -1,0 +1,281 @@
+{
+  "name": "lab-portfolio-kit",
+  "library": "styled-components",
+  "components": [
+    {
+      "name": "Logo",
+      "type": "img",
+      "props": {
+        "src": "https://pro2-bar-s3-cdn-cf.myportfolio.com/297cb0cf023a849662c66db236fb4fa7/890ac7bb-60bf-4dd2-8fb6-61d2935a6f8e_rwc_0x0x800x292x800.png?h=9cd3c4a241ec5eff4a9ba62ce7b400bb"
+      },
+      "style": {
+        "display": "block",
+        "width": "100%",
+        "maxWidth": "128px"
+      },
+      "examples": [
+        "<Logo />"
+      ],
+      "system": []
+    },
+    {
+      "name": "BlockLink",
+      "type": "a",
+      "props": {
+        "hover": {
+          "opacity": ".7"
+        }
+      },
+      "style": {
+        "textDecoration": "none",
+        "display": "block"
+      },
+      "examples": [
+        "<BlockLink>Hello</BlockLink>"
+      ],
+      "system": [
+        "hover"
+      ]
+    },
+    {
+      "name": "SectionTitle",
+      "type": "h2",
+      "props": {
+        "color": "gray",
+        "fontSize": 0
+      },
+      "style": {
+        "textTransform": "uppercase",
+        "letterSpacing": ".1em",
+        "fontFamily": "\"avenir next\", avenir, sans-serif"
+      },
+      "examples": [
+        "<SectionTitle>Hello</SectionTitle>"
+      ],
+      "system": []
+    },
+    {
+      "name": "ListItem",
+      "type": "a",
+      "props": {},
+      "style": {
+        "fontFamily": "athelas, sans-serif"
+      },
+      "examples": [
+        "<ListItem>Hello</ListItem>"
+      ],
+      "system": []
+    },
+    {
+      "name": "Image",
+      "type": "img",
+      "props": {
+        "w": 1,
+        "src": "https://pro2-bar-s3-cdn-cf.myportfolio.com/297cb0cf023a849662c66db236fb4fa7/8fa0dd33ec1edbd0026bb0bc23a700f0a55710951a01c5a4c7f7496bdf4f2c778f4728eb55371070_rwc_328x1671x715x561x715.jpg"
+      },
+      "style": {
+        "display": "block"
+      },
+      "examples": [
+        "<Image />"
+      ],
+      "system": []
+    },
+    {
+      "name": "Card",
+      "imports": [
+        "CardTitle",
+        "CardKicker",
+        "CardImage",
+        "Div",
+        "CardContainer"
+      ],
+      "jsx": "<CardContainer {...props}>\n  <CardImage src={props.image} />\n  <CardTitle fontSize={[2,3,3]} children={props.title} />\n  <CardKicker fontSize={[1,2,2]} children={props.kicker} />\n</CardContainer>",
+      "examples": [
+        "<Card />",
+        "<Card \ntitle=\"Sandstorm Website\" \nkicker=\"2016\" />"
+      ],
+      "system": []
+    },
+    {
+      "name": "CardContainer",
+      "type": "a",
+      "props": {
+        "w": [
+          1,
+          0.3333333333333333
+        ],
+        "px": 2,
+        "py": 2,
+        "hover": {
+          "opacity": 0.7,
+          "transition": "opacity .25s ease-in-out"
+        }
+      },
+      "style": {
+        "opacity": 1,
+        "transition": "opacity .33s ease-in-out"
+      },
+      "examples": [
+        "<CardContainer>Hello</CardContainer>"
+      ],
+      "system": [
+        "hover"
+      ]
+    },
+    {
+      "name": "CardImage",
+      "type": "img",
+      "props": {
+        "src": "https://pro2-bar-s3-cdn-cf.myportfolio.com/297cb0cf023a849662c66db236fb4fa7/8fa0dd33ec1edbd0026bb0bc23a700f0a55710951a01c5a4c7f7496bdf4f2c778f4728eb55371070_rwc_328x1671x715x561x715.jpg?h=89746c7b86a02dca769770b67e222200&url=aHR0cHM6Ly9taXItczMtY2RuLWNmLmJlaGFuY2UubmV0L3Byb2plY3RzL29yaWdpbmFsLzM1OTA5YjQ2ODA1MDQ3LlkzSnZjQ3czTnpNc05qQTFMRE13TVN3eE5qUXouanBn",
+        "w": 1
+      },
+      "style": {
+        "display": "block"
+      },
+      "examples": [
+        "<CardImage />"
+      ],
+      "system": []
+    },
+    {
+      "name": "CardTitle",
+      "type": "h2",
+      "props": {
+        "fontSize": 2,
+        "mb": 0,
+        "fontWeight": "100",
+        "children": "This is the default Card Title"
+      },
+      "style": {
+        "fontFamily": "athelas, serif",
+        "lineHeight": "1.25",
+        "textTransform": "capitalize"
+      },
+      "examples": [
+        "<CardTitle>Hello</CardTitle>"
+      ],
+      "system": [
+        "fontWeight"
+      ]
+    },
+    {
+      "name": "CardKicker",
+      "type": "h3",
+      "props": {
+        "color": "gray",
+        "fontSize": 1,
+        "mt": 0,
+        "children": "2016",
+        "fontWeight": "100"
+      },
+      "style": {
+        "fontFamily": "athelas, serif"
+      },
+      "examples": [
+        "<CardKicker>Hello</CardKicker>"
+      ],
+      "system": [
+        "fontWeight"
+      ]
+    },
+    {
+      "name": "Div",
+      "type": "div",
+      "props": {},
+      "style": {},
+      "examples": [
+        "<Div>Hello</Div>"
+      ]
+    },
+    {
+      "name": "Footer",
+      "type": "footer",
+      "props": {},
+      "style": {
+        "textAlign": "center"
+      },
+      "examples": [
+        "<Footer>Hello</Footer>"
+      ],
+      "system": []
+    },
+    {
+      "name": "TextLink",
+      "type": "a",
+      "props": {
+        "fontSize": 1,
+        "mb": 3,
+        "hover": {
+          "color": "#000",
+          "transition": "color .2s ease-in-out"
+        },
+        "color": "gray"
+      },
+      "style": {
+        "display": "block",
+        "lineHeight": "1.25"
+      },
+      "examples": [
+        "<TextLink>Hello</TextLink>",
+        "<TextLink>Hello</TextLink>",
+        "<TextLink>Hello</TextLink>"
+      ],
+      "system": [
+        "borderColor",
+        "hover"
+      ]
+    },
+    {
+      "name": "SiteContainer",
+      "type": "div",
+      "props": {
+        "mx": "auto",
+        "bg": "transparent"
+      },
+      "style": {
+        "maxWidth": "64em"
+      },
+      "examples": [
+        "<SiteContainer>Hello</SiteContainer>"
+      ],
+      "system": []
+    },
+    {
+      "name": "ProjectTitle",
+      "type": "h2",
+      "props": {
+        "fontWeight": "600"
+      },
+      "style": {
+        "fontFamily": "\"avenir next\", avenir, sans-serif",
+        "textAlign": "center"
+      },
+      "examples": [
+        "<ProjectTitle>Hello</ProjectTitle>"
+      ],
+      "system": [
+        "fontWeight"
+      ]
+    },
+    {
+      "name": "ProjectText",
+      "type": "p",
+      "props": {
+        "borderColor": "transparent",
+        "color": "gray",
+        "mx": "auto"
+      },
+      "style": {
+        "textAlign": "center",
+        "maxWidth": "28em"
+      },
+      "examples": [
+        "<ProjectText>Hello</ProjectText>"
+      ],
+      "system": [
+        "borderColor"
+      ]
+    }
+  ]
+}
